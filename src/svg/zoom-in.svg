@@ -26,7 +26,7 @@
        osb:paint="solid"
        gradientTransform="matrix(0.38299175,0,0,0.38299175,185.97435,205.35914)">
       <stop
-         style="stop-color:#d64933;stop-opacity:1;"
+         style="stop-color:#558F6E;stop-opacity:1;"
          offset="0"
          id="stop5181-2-7" />
     </linearGradient>
@@ -95,7 +95,7 @@
      id="layer4"
      inkscape:label="Layer 4">
     <path
-       style="fill:#d64933;fill-opacity:1;stroke:#2d2d2d;stroke-width:1.50000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       style="fill:#558F6E;fill-opacity:1;stroke:#2d2d2d;stroke-width:1.50000000000000000;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
        d="m 16.625,12.34375 c -0.828664,1.895166 -2.359877,3.411989 -4.25,4.25 l 6.5625,6.53125 4.21875,-4.28125 -6.53125,-6.5 z"
        id="rect5336"
        inkscape:connector-curvature="0" />

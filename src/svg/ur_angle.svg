@@ -26,7 +26,7 @@
        osb:paint="solid"
        gradientTransform="matrix(0.38299175,0,0,0.38299175,185.97435,205.35914)">
       <stop
-         style="stop-color:#d64933;stop-opacity:1;"
+         style="stop-color:#558F6E;stop-opacity:1;"
          offset="0"
          id="stop5181-2-7" />
     </linearGradient>
@@ -35,7 +35,7 @@
        osb:paint="solid"
        gradientTransform="matrix(0.36066273,0,0,0.36066273,204.34243,192.55955)">
       <stop
-         style="stop-color:#d64933;stop-opacity:1;"
+         style="stop-color:#558F6E;stop-opacity:1;"
          offset="0"
          id="stop5181-2-7-4" />
     </linearGradient>
