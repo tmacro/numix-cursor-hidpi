@@ -236,12 +236,33 @@ else:
 	info('No svgs to covert, skipping.')
 
 info('Building cursor theme... ', end = '')
+
+built_cursors = dict()
 for cursor in master_cursor_list.keys():
 	output = CURSOR_DIST.joinpath(cursor.stem)
 	cmd = 'xcursorgen %s %s'%(cursor.resolve().as_posix(), output.resolve().as_posix())
 	if not WatchProcess(shlex.split(cmd), wait = True) == 0:
 		err('Error building %s'%cursor.stem)
+	else:
+		built_cursors[cursor.stem] = output
 info_sub('Done')
+
+info('Loading aliases... ', end = '')
+cursor_aliases = defaultdict(list)
+with open('src/aliases') as f:
+	for line in f:
+		cursor, alias = line.split()
+		cursor_aliases[cursor].append(alias)
+info_sub('Done')
+
+info('Building symbolic links...')
+for cursor, aliases in cursor_aliases.items():
+	if cursor not in built_cursors:
+		err('Could not find cursor %s for alias %s'%(cursor, alias))
+		continue
+	for alias in aliases:
+		link = CURSOR_DIST.joinpath(alias).symlink_to(built_cursors[cursor].stem)
+info('Done')
 
 info('Copying index... ', end = '')
 for p in theme:
