@@ -26,7 +26,7 @@ BUILD_DIR = PosixPath('build/')
 CURSOR_OUTPUT = BUILD_DIR.joinpath('cursor/')
 ICON_OUTPUT = BUILD_DIR.joinpath('icons/')
 
-CMD_TMPL = 'inkscape -f %s -e %s --export-dpi %s'
+CMD_TMPL = 'inkscape %s -o %s --export-dpi %s'
 
 DPI = OrderedDict([
 	(90,  24),
